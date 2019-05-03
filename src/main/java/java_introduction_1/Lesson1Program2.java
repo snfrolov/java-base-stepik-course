@@ -7,8 +7,8 @@ import java.security.MessageDigest;
  * В качестве ответа введите то, что эта программа напечатает в консоль.
  */
 
-public class Lesson1Program2 {
-    public static void main(String[] args) throws Exception {
+class Lesson1Program2 {
+    static void main() throws Exception {
         MessageDigest md = MessageDigest.getInstance("MD5");
         byte[] digest = md.digest("abracadabra".getBytes("UTF-8"));
         for (byte b : digest) {
